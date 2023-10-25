@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TIF21TodosCompose</string>
+    <string name="enter_todo">Todo eingeben</string>
 </resources>
