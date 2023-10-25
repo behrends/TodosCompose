@@ -50,17 +50,17 @@ fun TodosApp() {
 
 @Composable
 fun TodoInput() {
-    var todo = remember { mutableStateOf("") }
+    var todo by remember { mutableStateOf("") }
     val context = LocalContext.current
     Row {
         TextField(
-            value = todo.value,
-            onValueChange = { todo.value = it },
+            value = todo,
+            onValueChange = { todo = it },
             label = { Text(stringResource(R.string.enter_todo)) },
         )
         Spacer(modifier = Modifier.width(16.dp))
         Button(onClick = {
-            Toast.makeText(context, todo.value, Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, todo, Toast.LENGTH_SHORT).show()
         }) {
             Text(stringResource(R.string.save))
         }
