@@ -52,9 +52,9 @@ fun TodosApp() {
 
 @Composable
 fun Todos() {
-    var todos by remember { mutableStateOf(listOf("Sport", "Einkaufen", "Kotlin lernen")) }
+    var todos by remember { mutableStateOf(listOf(Todo("Sport"), Todo("Einkaufen"), Todo("Kotlin lernen"))) }
     Column {
-        TodoInput(onSave = {todos = todos + it})
+        TodoInput(onSave = {todos = todos + Todo(it)})
         LazyColumn(modifier = Modifier.fillMaxSize().padding(16.dp)) {
             items(todos) { TodoItem(it) }
         }
@@ -78,6 +78,6 @@ fun TodoInput(onSave: (String) -> Unit) {
 }
 
 @Composable
-fun TodoItem(todo: String) {
-    Text(text = todo, modifier = Modifier.padding(8.dp))
+fun TodoItem(todo: Todo) {
+    Text(text = todo.text, modifier = Modifier.padding(8.dp))
 }
