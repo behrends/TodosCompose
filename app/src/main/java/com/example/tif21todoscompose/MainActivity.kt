@@ -47,11 +47,11 @@ class MainActivity : ComponentActivity() {
 @Preview(showBackground = true)
 @Composable
 fun TodosApp() {
-    TodoInput()
+    Todos()
 }
 
 @Composable
-fun TodoInput() {
+fun Todos() {
     var todos by remember { mutableStateOf(listOf("Sport", "Einkaufen", "Kotlin lernen")) }
     Column {
         TodoInput(onSave = {todos = todos + it})
