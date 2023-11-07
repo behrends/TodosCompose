@@ -63,10 +63,12 @@ fun Todos() {
 
 @Composable
 fun TodoInput(onSave: (String) -> Unit) {
+    // by ist ein Delegate auf die Eigenschaft value
+    // var todo = remember { mutableStateOf("") }
     var todo by remember { mutableStateOf("") }
     Row {
         TextField(
-            value = todo,
+            value = todo, // ohne by: value = todo.value
             onValueChange = { todo = it },
             label = { Text(stringResource(R.string.enter_todo)) },
         )
