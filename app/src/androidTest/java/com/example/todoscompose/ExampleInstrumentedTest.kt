@@ -1,4 +1,4 @@
-package com.example.tif21todoscompose
+package com.example.todoscompose
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.tif21todoscompose", appContext.packageName)
+        assertEquals("com.example.todoscompose", appContext.packageName)
     }
 }

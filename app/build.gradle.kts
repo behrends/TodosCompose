@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.tif21todoscompose"
+    namespace = "com.example.todoscompose"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.tif21todoscompose"
+        applicationId = "com.example.todoscompose"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

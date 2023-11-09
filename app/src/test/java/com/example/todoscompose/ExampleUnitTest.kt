@@ -1,4 +1,4 @@
-package com.example.tif21todoscompose
+package com.example.todoscompose
 
 import org.junit.Test
 

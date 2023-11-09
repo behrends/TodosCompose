@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TIF21TodosCompose</string>
+    <string name="app_name">TodosCompose</string>
     <string name="enter_todo">Todo eingeben</string>
     <string name="save">Speichern</string>
 </resources>
